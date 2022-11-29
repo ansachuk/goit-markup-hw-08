@@ -1,0 +1,134 @@
+.footer {
+  background-color: var(--footer-color);
+  padding: 60px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer {
+  a {
+    color: var(--header-color);
+  }
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+.footer__list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__icons {
+  fill: var(--header-color);
+}
+
+.footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: var(--anima-duration);
+  transition-timing-function: var(--anima-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--action-color);
+  }
+}
+
+/* ---------------- FOOTER FORM ------------- */
+
+.footer-form__disc {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-form__form {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+
+  background-color: transparent;
+  padding-left: 16px;
+
+  color: var(--header-color);
+
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: outline var(--anima-duration) var(--anima-function);
+
+  &:focus {
+    outline: 1px solid var(--action-color);
+  }
+}
+
+.footer-form__button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  height: 50px;
+
+  padding: 10px 25px;
+
+  border: none;
+  background-color: var(--action-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  transition: background var(--anima-duration) var(--anima-function);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    cursor: pointer;
+  }
+}
+
+.footer-form__icon {
+  fill: var(--header-color);
+}

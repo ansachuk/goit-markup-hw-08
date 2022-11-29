@@ -1,0 +1,34 @@
+.advences.section {
+  padding-bottom: 0;
+}
+
+.advences__subtitle {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advences__list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.advences__image {
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advences__description {
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  width: 270px;
+}

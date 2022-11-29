@@ -1,0 +1,17 @@
+.link.link--current {
+  color: var(--action-color);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -33px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+
+    background: var(--action-color);
+    border-radius: 2px;
+  }
+}
