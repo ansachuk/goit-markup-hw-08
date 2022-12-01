@@ -126,10 +126,24 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -633,6 +647,15 @@ textarea.modal__input {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   width: 270px;
+}
+
+.working {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .working {
+    display: block;
+  }
 }
 
 .working__title,
