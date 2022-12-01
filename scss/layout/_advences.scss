@@ -10,7 +10,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 }
@@ -31,7 +31,7 @@
 }
 
 .advences__item {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
 
