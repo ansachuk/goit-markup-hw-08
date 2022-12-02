@@ -1,6 +1,7 @@
-.advences.section {
-  padding-bottom: 0;
-  // margin: 0 auto;
+.advences {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 
 .advences__subtitle {
@@ -16,8 +17,6 @@
 }
 
 .advences__list {
-  // width: 450px;
-
   @media screen and (min-width: 768px) {
     width: 738px;
     display: flex;
@@ -59,16 +58,15 @@
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 
-
   @media screen and (min-width: 480px) {
-  width: 450px;
+    width: 450px;
   }
 
   @media screen and (min-width: 768px) {
-  width: 354px;
+    width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
-  width: 270px;
+    width: 270px;
   }
 }

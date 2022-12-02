@@ -24,7 +24,7 @@
 
   <body>
     <!-- header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__container container">
         <nav class="nav">
           <a href="./" class="logo link"> <span class="logo__name--blue-web">Web</span>Studio </a>
@@ -57,16 +57,16 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!-- main -->
     <main class="main">
-      <!-- <section class="hero section">
+      <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" data-modal-open class="button">Замовити послугу</button>
         </div>
-      </section> -->
-      <!-- <section class="advences section">
+      </section>
+      <section class="advences section">
         <div class="container">
           <h2 class="advences__title invisible">Наші переваги</h2>
           <ul class="advences__list list">
@@ -116,15 +116,18 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="working section">
+      </section>
+      <section class="working section">
         <div class="container">
           <h2 class="working__title title">Чим ми займаємося</h2>
           <ul class="working__list list">
             <li class="working__item">
               <div class="working__thumb">
                 <img
-                  srcset="./images/homepage/working/img1@1x.jpg 1x, ./images/homepage/working/img1@2x.jpg 2x"
+                  srcset="
+                    ./images/homepage/working/img1@1x.jpg 1x,
+                    ./images/homepage/working/img1@2x.jpg 2x
+                  "
                   src="./images/homepage/working/img1@1x.jpg"
                   width="370"
                   height="294"
@@ -137,7 +140,10 @@
             <li class="working__item">
               <div class="working__thumb">
                 <img
-                  srcset="./images/homepage/working/img2@1x.jpg 1x, ./images/homepage/working/img2@2x.jpg 2x"
+                  srcset="
+                    ./images/homepage/working/img2@1x.jpg 1x,
+                    ./images/homepage/working/img2@2x.jpg 2x
+                  "
                   src="./images/homepage/working/img2@1x.jpg"
                   width="370"
                   height="294"
@@ -150,7 +156,10 @@
             <li class="working__item">
               <div class="working__thumb">
                 <img
-                  srcset="./images/homepage/working/img3@1x.jpg 1x, ./images/homepage/working/img3@2x.jpg 2x"
+                  srcset="
+                    ./images/homepage/working/img3@1x.jpg 1x,
+                    ./images/homepage/working/img3@2x.jpg 2x
+                  "
                   src="./images/homepage/working/img3@1x.jpg"
                   width="370"
                   height="294"
@@ -162,17 +171,25 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="our-team section">
         <div class="container">
           <h2 class="our-team__title title">Наша команда</h2>
           <ul class="our-team__list list">
             <li class="our-team__item">
               <img
-                src="./images/homepage/our-team/Igor.jpg"
                 alt="член компанії"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/homepage/our-team/img1-270.jpg 270w,
+                  ./images/homepage/our-team/img1-354.jpg 354w,
+                  ./images/homepage/our-team/img1-450.jpg 450w,
+                  ./images/homepage/our-team/img1-540.jpg 540w,
+                  ./images/homepage/our-team/img1-708.jpg 708w,
+                  ./images/homepage/our-team/img1-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/homepage/our-team/img1-450.jpg"
+                loading="lazy"
               />
               <div class="our-team__description">
                 <h3 class="our-team__subtitle subtitle">Ігор Дем'яненко</h3>
@@ -231,10 +248,18 @@
             </li>
             <li class="our-team__item">
               <img
-                src="./images/homepage/our-team/Olga.jpg"
                 alt="член компанії"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/homepage/our-team/img2-270.jpg 270w,
+                  ./images/homepage/our-team/img2-354.jpg 354w,
+                  ./images/homepage/our-team/img2-450.jpg 450w,
+                  ./images/homepage/our-team/img2-540.jpg 540w,
+                  ./images/homepage/our-team/img2-708.jpg 708w,
+                  ./images/homepage/our-team/img2-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/homepage/our-team/img2-450.jpg"
+                loading="lazy"
               />
               <div class="our-team__description">
                 <h3 class="our-team__subtitle subtitle">Ольга Рєпіна</h3>
@@ -293,10 +318,18 @@
             </li>
             <li class="our-team__item">
               <img
-                src="./images/homepage/our-team/Mukola.jpg"
                 alt="член компанії"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/homepage/our-team/img3-270.jpg 270w,
+                  ./images/homepage/our-team/img3-354.jpg 354w,
+                  ./images/homepage/our-team/img3-450.jpg 450w,
+                  ./images/homepage/our-team/img3-540.jpg 540w,
+                  ./images/homepage/our-team/img3-708.jpg 708w,
+                  ./images/homepage/our-team/img3-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/homepage/our-team/img3-450.jpg"
+                loading="lazy"
               />
               <div class="our-team__description">
                 <h3 class="our-team__subtitle subtitle">Микола Тарасов</h3>
@@ -355,10 +388,18 @@
             </li>
             <li class="our-team__item">
               <img
-                src="./images/homepage/our-team/Muxajlo.jpg"
                 alt="член компанії"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/homepage/our-team/img4-270.jpg 270w,
+                  ./images/homepage/our-team/img4-354.jpg 354w,
+                  ./images/homepage/our-team/img4-450.jpg 450w,
+                  ./images/homepage/our-team/img4-540.jpg 540w,
+                  ./images/homepage/our-team/img4-708.jpg 708w,
+                  ./images/homepage/our-team/img4-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/homepage/our-team/img4-450.jpg"
+                loading="lazy"
               />
               <div class="our-team__description">
                 <h3 class="our-team__subtitle subtitle">Михайло Єрмаков</h3>
@@ -469,7 +510,7 @@
       </section> -->
     </main>
     <!-- footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__container container">
         <div class="footer__wrapper">
           <div class="address">
@@ -558,14 +599,15 @@
             <input type="email" name="email" placeholder="E-mail" class="footer-input" />
 
             <button class="button footer-form__button" type="submit">
-              Підписатися<svg class="footer-form__icon" width="24" height="24">
+              Підписатися
+              <svg class="footer-form__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- --------------- MODAL-WINDOW -------------- -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal" data-modal-window>
