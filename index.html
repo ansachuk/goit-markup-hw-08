@@ -24,7 +24,7 @@
 
   <body>
     <!-- header -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="header__container container">
         <nav class="nav">
           <a href="./" class="logo link"> <span class="logo__name--blue-web">Web</span>Studio </a>
@@ -57,16 +57,16 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <!-- main -->
     <main class="main">
-      <section class="hero section">
+      <!-- <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" data-modal-open class="button">Замовити послугу</button>
         </div>
-      </section>
-      <section class="advences section">
+      </section> -->
+      <!-- <section class="advences section">
         <div class="container">
           <h2 class="advences__title invisible">Наші переваги</h2>
           <ul class="advences__list list">
@@ -116,18 +116,20 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="working section">
+      </section> -->
+      <!-- <section class="working section">
         <div class="container">
           <h2 class="working__title title">Чим ми займаємося</h2>
           <ul class="working__list list">
             <li class="working__item">
               <div class="working__thumb">
                 <img
-                  src="./images/homepage/working/image1.jpg"
+                  srcset="./images/homepage/working/img1@1x.jpg 1x, ./images/homepage/working/img1@2x.jpg 2x"
+                  src="./images/homepage/working/img1@1x.jpg"
                   width="370"
                   height="294"
                   alt="Людина пише код"
+                  loading="lazy"
                 />
                 <p class="working__description">Десктопні додатки</p>
               </div>
@@ -135,10 +137,12 @@
             <li class="working__item">
               <div class="working__thumb">
                 <img
-                  src="./images/homepage/working/image2.jpg"
+                  srcset="./images/homepage/working/img2@1x.jpg 1x, ./images/homepage/working/img2@2x.jpg 2x"
+                  src="./images/homepage/working/img2@1x.jpg"
                   width="370"
                   height="294"
                   alt="Людина працює в телефоні"
+                  loading="lazy"
                 />
                 <p class="working__description">Мобільні додатки</p>
               </div>
@@ -146,18 +150,20 @@
             <li class="working__item">
               <div class="working__thumb">
                 <img
-                  src="./images/homepage/working/image3.jpg"
+                  srcset="./images/homepage/working/img3@1x.jpg 1x, ./images/homepage/working/img3@2x.jpg 2x"
+                  src="./images/homepage/working/img3@1x.jpg"
                   width="370"
                   height="294"
                   alt="Людина на планшеті вибирає колір"
+                  loading="lazy"
                 />
                 <p class="working__description">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
         </div>
-      </section>
-      <!-- <section class="our-team section">
+      </section> -->
+      <section class="our-team section">
         <div class="container">
           <h2 class="our-team__title title">Наша команда</h2>
           <ul class="our-team__list list">
@@ -411,8 +417,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <section class="clients section">
+      </section>
+      <!-- <section class="clients section">
         <div class="container">
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients__list list">
@@ -460,10 +466,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer__container container">
         <div class="footer__wrapper">
           <div class="address">
@@ -559,7 +565,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- --------------- MODAL-WINDOW -------------- -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal" data-modal-window>
