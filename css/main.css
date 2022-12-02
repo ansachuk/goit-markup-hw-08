@@ -299,12 +299,18 @@ body {
 
 .modal {
   position: relative;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__button {
@@ -356,11 +362,16 @@ body {
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--font-submain-color);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .modal__label {
@@ -451,7 +462,7 @@ textarea.modal__input {
 
 .accept__input {
   display: inline-block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   margin-right: 9px;
   background-image: url(../images/homepage/checkbox/check-empty.svg);
@@ -462,6 +473,21 @@ textarea.modal__input {
 }
 .accept__checkbox:checked + .accept__input {
   background-image: url(../images/homepage/checkbox/icon-check.svg);
+}
+
+.accept__checkbox--disc {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 12px;
+  line-height: 1.1666666667;
+}
+@media screen and (min-width: 1200px) {
+  .accept__checkbox--disc {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .accept__link {
