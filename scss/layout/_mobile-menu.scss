@@ -62,6 +62,10 @@
 
     color: #212121;
 
+    & a {
+      transition: color var(--anima-duration) var(--anima-function);
+    }
+
     & a:hover {
       color: var(--action-color);
     }
@@ -84,7 +88,7 @@
 
     & a {
       font-size: 18px;
-      line-height: calc(22/18);
+      line-height: calc(22 / 18);
       color: var(--action-color);
     }
   }
