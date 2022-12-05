@@ -623,13 +623,15 @@ textarea.modal__input {
   z-index: 100;
   width: 100%;
   height: 100%;
+  padding: 48px 30px;
   background-color: #ffffff;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-transition-property: opasity, -webkit-transform;
-  transition-property: opasity, -webkit-transform;
-  transition-property: transform, opasity;
-  transition-property: transform, opasity, -webkit-transform;
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
   -webkit-transform-origin: both;
           transform-origin: both;
   -webkit-transition-duration: 400ms;
@@ -638,6 +640,7 @@ textarea.modal__input {
           transition-timing-function: var(--anima-function);
 }
 .menu__container.is-open {
+  opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -664,6 +667,43 @@ textarea.modal__input {
   .menu__button {
     display: block;
   }
+}
+
+.menu__list--nav {
+  font-size: 40px;
+  line-height: 1.175;
+  margin-bottom: 170px;
+  color: #212121;
+}
+.menu__list--nav a:hover {
+  color: var(--action-color);
+}
+.menu__list--nav :not(last-child) {
+  margin-bottom: 33px;
+}
+.menu__list--connect {
+  font-size: 24px;
+  line-height: 1.1666666667;
+  margin-bottom: 60px;
+}
+.menu__list--social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.menu__list--social a {
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: var(--action-color);
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  color: var(--action-color);
+  margin-bottom: 32px;
 }
 
 .contacts {
