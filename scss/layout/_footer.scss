@@ -24,7 +24,7 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     justify-content: space-around;
-    gap: 165px;
+    // gap: 165px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -38,11 +38,11 @@
 .footer__social {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
 }
 
 .footer__title {
-  text-align: center;
+  // text-align: center;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;

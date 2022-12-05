@@ -143,6 +143,7 @@ body {
   .logo {
     font-size: 26px;
     line-height: 1.1923076923;
+    margin-right: 92px;
   }
 }
 .logo__name--blue-web {
@@ -617,14 +618,11 @@ textarea.modal__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__container {
     gap: 90px;
   }
@@ -635,6 +633,7 @@ textarea.modal__input {
   top: 0;
   left: 0;
   z-index: 100;
+  pointer-events: none;
   width: 100%;
   height: 100%;
   padding: 48px 30px;
@@ -657,6 +656,18 @@ textarea.modal__input {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  pointer-events: all;
+}
+
+.mobile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 .menu__button {
@@ -686,7 +697,8 @@ textarea.modal__input {
 .menu__list--nav {
   font-size: 40px;
   line-height: 1.175;
-  margin-bottom: 170px;
+  font-weight: 500;
+  margin-bottom: auto;
   color: #212121;
 }
 .menu__list--nav a {
@@ -702,7 +714,7 @@ textarea.modal__input {
 .menu__list--connect {
   font-size: 24px;
   line-height: 1.1666666667;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 .menu__list--social {
   display: -webkit-box;
@@ -744,6 +756,7 @@ textarea.modal__input {
 }
 @media screen and (min-width: 1200px) {
   .contacts {
+    margin-left: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -793,7 +806,6 @@ textarea.modal__input {
 .contacts__icon:hover, .contacts__icon:focus {
   fill: var(--action-color);
 }
-
 .contacts__icon--mail {
   width: 16px;
   height: 12px;
@@ -807,12 +819,11 @@ textarea.modal__input {
     height: 10px;
   }
 }
-
 @media screen and (max-width: 1199px) {
   .contacts__icon--phone {
     position: absolute;
     top: 0;
-    left: -18px;
+    left: -23px;
     width: 10px;
     height: 14px;
   }
@@ -835,11 +846,6 @@ textarea.modal__input {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/homepage/hero/imgs@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/homepage/hero/imgs@2x.jpg);
-  }
-}
-@media screen and (min-width: 480px) {
-  .hero {
-    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -873,7 +879,7 @@ textarea.modal__input {
   }
 }
 .hero__title {
-  width: 345px;
+  max-width: 360px;
   margin: 0 auto 30px auto;
   padding: 0;
   color: var(--header-color);
@@ -886,7 +892,7 @@ textarea.modal__input {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    min-width: 696px;
     font-size: 44px;
     line-height: 1.3636363636;
   }
@@ -932,6 +938,9 @@ textarea.modal__input {
   .advences__item {
     margin-bottom: 30px;
   }
+}
+.advences__item.item {
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
   .advences__item {
@@ -1252,7 +1261,6 @@ textarea.modal__input {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    gap: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1278,13 +1286,9 @@ textarea.modal__input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .footer__title {
-  text-align: center;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
