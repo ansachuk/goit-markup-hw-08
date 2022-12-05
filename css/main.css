@@ -143,6 +143,7 @@ body {
   .logo {
     font-size: 26px;
     line-height: 1.1923076923;
+    margin-right: 92px;
   }
 }
 .logo__name--blue-web {
@@ -617,14 +618,11 @@ textarea.modal__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__container {
     gap: 90px;
   }
@@ -758,6 +756,7 @@ textarea.modal__input {
 }
 @media screen and (min-width: 1200px) {
   .contacts {
+    margin-left: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -807,7 +806,6 @@ textarea.modal__input {
 .contacts__icon:hover, .contacts__icon:focus {
   fill: var(--action-color);
 }
-
 .contacts__icon--mail {
   width: 16px;
   height: 12px;
@@ -821,12 +819,11 @@ textarea.modal__input {
     height: 10px;
   }
 }
-
 @media screen and (max-width: 1199px) {
   .contacts__icon--phone {
     position: absolute;
     top: 0;
-    left: -18px;
+    left: -23px;
     width: 10px;
     height: 14px;
   }
@@ -849,11 +846,6 @@ textarea.modal__input {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/homepage/hero/imgs@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/homepage/hero/imgs@2x.jpg);
-  }
-}
-@media screen and (min-width: 480px) {
-  .hero {
-    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -900,7 +892,7 @@ textarea.modal__input {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    min-width: 696px;
     font-size: 44px;
     line-height: 1.3636363636;
   }
@@ -1269,7 +1261,6 @@ textarea.modal__input {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    gap: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1295,13 +1286,9 @@ textarea.modal__input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .footer__title {
-  text-align: center;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
