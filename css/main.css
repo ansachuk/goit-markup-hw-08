@@ -635,6 +635,7 @@ textarea.modal__input {
   top: 0;
   left: 0;
   z-index: 100;
+  pointer-events: none;
   width: 100%;
   height: 100%;
   padding: 48px 30px;
@@ -657,6 +658,18 @@ textarea.modal__input {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  pointer-events: all;
+}
+
+.mobile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 .menu__button {
@@ -686,7 +699,8 @@ textarea.modal__input {
 .menu__list--nav {
   font-size: 40px;
   line-height: 1.175;
-  margin-bottom: 170px;
+  font-weight: 500;
+  margin-bottom: auto;
   color: #212121;
 }
 .menu__list--nav a {
@@ -702,7 +716,7 @@ textarea.modal__input {
 .menu__list--connect {
   font-size: 24px;
   line-height: 1.1666666667;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 .menu__list--social {
   display: -webkit-box;
@@ -873,7 +887,7 @@ textarea.modal__input {
   }
 }
 .hero__title {
-  width: 345px;
+  max-width: 360px;
   margin: 0 auto 30px auto;
   padding: 0;
   color: var(--header-color);
@@ -932,6 +946,9 @@ textarea.modal__input {
   .advences__item {
     margin-bottom: 30px;
   }
+}
+.advences__item.item {
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
   .advences__item {
