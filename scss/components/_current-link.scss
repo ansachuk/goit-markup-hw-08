@@ -5,6 +5,9 @@
   &::after {
     content: '';
     position: absolute;
+
+    opacity: 0;
+
     bottom: -33px;
     left: 0;
     display: inline-block;
@@ -13,5 +16,9 @@
 
     background: var(--action-color);
     border-radius: 2px;
+
+    @media screen and (min-width:768px) {
+      opacity: 1;
+    }
   }
 }
